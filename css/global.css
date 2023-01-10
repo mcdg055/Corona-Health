@@ -48,8 +48,6 @@ html {
     cursor: pointer;
 }
 
-
-
 /* CART ICON - START*/
 
 .cart {
@@ -99,6 +97,13 @@ html {
 
     width: 300px;
     height: 100%;
+    overflow-y: scroll;
+
+    padding-bottom: 50px;
+}
+
+.mobile-nav__wrapper a {
+    text-decoration: none;
 }
 
 .mobile-search__wrapper {
@@ -159,14 +164,6 @@ html {
     margin-right: 10px;
 }
 
-.main-menu {
-    text-transform: uppercase;
-}
-
-.main-menu a {
-    text-decoration: unset;
-}
-
 .main-menu li {
     list-style-type: none;
 }
@@ -178,10 +175,15 @@ ul.main-menu {
 }
 
 .main-menu__item>a,
-.submenu-list__item>a {
+.submenu-list__item>a,
+.mobile-account>a,
+.mobile-wishlist>a {
+    text-transform: uppercase;
     padding: 14px 15px;
     width: 100%;
     display: inline-block;
+    border-top: 1px solid #ebebeb;
+    color: #000;
 }
 
 .submenu-list {
@@ -189,27 +191,66 @@ ul.main-menu {
 }
 
 .toggle-submenu::after {
-    content: "\2b";
-    font-size: 20px;
+    font-family: 'FontAwesome';
+    content: "\f067";
+
+    color: #2F698E;
+    font-size: 14px;
     font-weight: bold;
     position: relative;
     float: right;
 }
 
-.main-menu__item.active .toggle-submenu::after {
+.main-menu__item.active>.toggle-submenu::after {
     content: "\f068";
     font-family: "Font Awesome 6 Free";
     font-size: 14px;
 }
 
 .submenu-list {
-    transition: all 0.35s ease-in-out ;
+    transition: all 0.35s ease-in-out;
     max-height: 0;
     overflow: hidden;
 }
 
 .main-menu__item.active>.submenu-list {
     max-height: 100%;
+}
+
+.social-icons>ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 15px;
+    gap: 4px;
+}
+
+.social-icons>ul>li>a {
+    width: 30px;
+    height: 30px;
+
+    text-align: center;
+    color: #fff;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.hd-facebook {
+    background-color: #3B5998;
+}
+
+.hd-twitter {
+    background-color: #2CAAE1;
+}
+
+.hd-youtube {
+    background-color: #CC181E;
+}
+
+.hd-instagram {
+    background-color: #CB2899;
 }
 
 /* MOBILE SIDE PANEL - END */
