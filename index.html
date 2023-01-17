@@ -15,12 +15,17 @@
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
         rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
     <title>Corona - ThemeFTC</title>
 
 </head>
 
 <body>
-    <div class="mobile-side-panel">
+    <div id="side_panel" class="mobile-side-panel">
         <div class="mobile-nav__wrapper">
             <div class="mobile-search">
                 <div class="mobile-search__wrapper">
@@ -38,7 +43,7 @@
             <div class="mobile-menu__wrapper">
                 <div class="main-menu__container">
                     <ul id="main-menu-mobile" class="main-menu">
-                        <li class="main-menu__item active">
+                        <li class="main-menu__item">
                             <a href="#" class="toggle-submenu">Home</a>
                             <ul class="submenu-list">
                                 <li class="main-menu__item"><a href="#">Home 1</a></li>
@@ -121,6 +126,7 @@
             </div>
         </div>
     </div>
+
     <header class="site-header">
         <div class="site-header__wrapper">
             <div class="site-header__right">
@@ -144,8 +150,78 @@
         </div>
     </header>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+
+    <footer>
+        <div class="footer__homepage">
+            <div class="site-header__logo">
+                <img src="./assets/images/logo.png" alt="Logo">
+            </div>
+            <div class="footer__newsletter">
+                <div class="newsletter__header">
+                    <h3>Signup Newsletter</h3>
+                </div>
+                <div class="singup__subtitle">
+                    <p>Subscribe to our newsletter to receive weekly news, updates, special offers, and exclusive
+                        discounts.
+                    </p>
+                </div>
+                <div class="newsletter__input-container">
+                    <div class="newsletter-input__wrapper">
+                        <input class="newsletter__input" type="text" placeholder="Your email">
+
+                        <button type="submit" class="fa-solid fa-paper-plane newsletter__telegram-icon"></button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__social-icons">
+                <ul class="footer-social__list">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer__contacts">
+                <p><b>Phone: </b><a href="#">+844 123 456 78 / +844 123 456 79</a></p>
+                <p><b>Mail: </b><a href="#">contact@gmail.com</a></p>
+                <p><b>Opening: </b><a href="#">8 AM - 6 PM : Mon - Sat</a></p>
+            </div>
+            <div>
+                <div class="my-accordion footer-menu">
+                    <a class="toggle footer-menu__heading" href="#">My Account</a>
+                    <ul class="my-accordion__content footer-menu__list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="mb-3"><a href="#">My Account</a></li>
+                        <li><a href="#">Order History</a></li>
+                        <li><a href="#">Advance Search</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="my-accordion footer-menu">
+                    <a class="toggle footer-menu__heading" href="#">Company</a>
+                    <ul class="my-accordion__content footer-menu__list">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Pages</a></li>
+                    </ul>
+                </div>
+              
+            </div>
+        </div>
+        <div class="copyright">
+            <div>
+                <p>Copyright 2022 by THEMEFTC. All Rights Reserved.</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="./JS/global.js"></script>
     <script src="./js/index.js"></script>
 </body>
 
